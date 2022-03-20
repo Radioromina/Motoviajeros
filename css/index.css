@@ -132,8 +132,15 @@ header .menu__item{
     color:var(--text);
     letter-spacing: 0.3em;
 }
+
+.titulo1:hover{
+    border-color: var(--text);
+}
+
 .img_parque{
     grid-area: img_parque;
+    animation: be_crazy 1 ease-in-out 5s;
+    
     
 }
 
@@ -273,6 +280,7 @@ header .menu__item{
     flex-direction: column;
     color:var(--text-1);
     font-size: .7em;
+    padding:5px;
 
 }
 
@@ -401,3 +409,11 @@ header .menu__item{
         align-items: center;
     }
 }
+/*ANIMACION*/
+.size{
+    transition: transform ease-in-out 1s;
+}
+.size:hover {
+    transform: scale(1.2);
+}
+
