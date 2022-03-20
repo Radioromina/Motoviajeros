@@ -409,8 +409,12 @@ header .menu__item{
         align-items: center;
     }
 }
+
+
 /*ANIMACION*/
-.size{
+
+
+.size {
     transition: transform ease-in-out 1s;
 }
 .size:hover {
