@@ -17,7 +17,6 @@
 }
 
 /*Reset*/
-
 *,
 * ::before,
 * ::after {
@@ -27,7 +26,7 @@
 }
 html{
     font-size: 62.5%;
-    font-family: var(--font-secondary);
+    color: var(--text);
 }
 
 /*Global*/
@@ -36,14 +35,26 @@ body{
     min-height: 100vh;
     position: relative;
     padding-bottom: 15em;
+    font-family: var(--font-secondary);
+    line-height: 0;
+    color:var(--text);
 }
 ul{
-    list-style-type:none ;   
+    list-style-type:none ;
+    padding: 2rem;
+    font-size: var(--text-md);    
+}
+ol, ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: var(--text);
 }
 a{
     color: var(--text);
     text-decoration: none;
-    display:inline-block; 
+    display:inline-block;
+    color: var(--text);
 }
 /*Helpers*/
 
@@ -54,30 +65,41 @@ a{
     display: flex;
     flex-direction:column;
 }
-.container{
+.contenedor{
     max-width: 1080px;
     margin:0 auto;
-    font-size: 15px;
 }
+
 /*Header*/
 
+main{
+    font-size:1.5rem;
+}
+
 header{
-    background-color: var(--principal) ;
+    background-color: var(--principal);
+    color: var(--text);
     
+}
+.color__header{
+    background-color: var(--principal);
 }
 header .navbar{
     min-height: 10vh;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    color: var(--text);
 }
 header .logo {
-    width: 15%;
+    width: 25%;
     padding: 5px;
     flex-basis: 30%;
+    margin-top:0;
 }
 header .menu{
     justify-content: space-between;
+    flex-basis: 50%;
 }
 header .menu__item{
     border: 2px solid var(--principal);
@@ -85,24 +107,33 @@ header .menu__item{
     font-size: var(--text-md);
 }
 .menu .menu__item:hover {
-    border-color: var(--text);
+    border-color:#07daff;
+    color:var(--text);
 }
 .menu .menu__item .menu__link{
     font-size: var(--text-md);
-    padding: 1rem;
+    padding: 1.5rem;
+    color: var(--text);
 }
 
 
-
+.navbar .nav-link{
+    font-family: var(--font-secondary);
+    text-decoration: none;
+    color:var(--text);
+    
+}
 /* Main */
 
 .title {
     text-align: center;
-    font-size: var(--text-lg);
+    font-size: 4rem;
     font-family: var(--font-secondary);
     color:var(--text);
     padding:2rem;
     letter-spacing: 0.1em;
+    font-weight: 100;
+    margin-bottom: 0;
 }
 
 .presentation__image img{
@@ -240,6 +271,15 @@ header .menu__item{
     font-family: var(--font-third);
 }
 
+.card{
+    background-color: #0b2135;
+    margin-top: 2rem;
+    padding-right: 0;
+    padding-left:0;
+}
+.card-img-top{
+   padding-right: 0;
+}
 
 .diferentes_destinos img{
     width: 100%;
@@ -261,6 +301,7 @@ header .menu__item{
     color:var(--text);
     padding: 0.5rem;
     line-height: 5rem;
+    text-align: center;
 }
 #mapa{
     display: flex;
@@ -272,8 +313,9 @@ header .menu__item{
     flex-direction: column;
     justify-content: center;
     color:var(--text);
-    line-height:2.5rem;
     padding: 0.5rem;
+    line-height: 1.5rem;
+
 }
 .contacto__text{
     display:flex;
@@ -281,7 +323,8 @@ header .menu__item{
     color:var(--text-1);
     font-size: .7em;
     padding:5px;
-
+    font-family: var(--font-third);
+    
 }
 
 .viajes{
@@ -311,7 +354,7 @@ header .menu__item{
 
 .pieDePagina {
     background-color: #143c66;
-    font-size: 11px;
+    font-size: 10px;
     padding-top: 25px;
     padding-bottom:25px;
     text-align: center;
@@ -320,9 +363,14 @@ header .menu__item{
     width: 100%;
     font-family: var(--font-third);
 }
+
 .pieDePagina__link {
     text-align: center;
     color:white;
+    font-size: 12px;
+    font-family: var(--font-third);
+    padding: 1px;
+    line-height: .7rem;
     
 }
 .pieDePagina__image {
@@ -340,16 +388,15 @@ header .menu__item{
 
     }
 
-    picture .logo {
-        flex-basis: 40%;    
+    /* .logo {
+        flex-basis: 8%;    
         width: 5em;
-    }
+    } */
 
     .title {
         font-size: 1.4em;
     }
-
-
+    
    .presentation__image{
        flex-grow: 1;
    }
