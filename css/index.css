@@ -1,470 +1,208 @@
-/*Import*/
-@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:ital,wght@0,500;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:ital,wght@0,500;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2? family=Open+Sans:ital,wght@0,300;1,300&display=swap');
-/*Variables*/
-
-:root{
---principal:#183250;
---secondary: #a9a9a9;
---text: #ffffff;
---text-1: #0e0d0d;
---text-lg:4em;
---text-md:1em;
---font-primary: 'Roboto', sans-serif;
---font-secondary: 'Michroma', sans-serif;
---font-third:'Open Sans', sans-serif;
-}
-
-/*Reset*/
+/*IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:ital,wght@0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:ital,wght@0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Open+Sans:ital,wght@0,300;1,300&display=swap");
+/*MISCELANEOUS*/
+/*RESETS*/
 *,
 * ::before,
 * ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
-    color: var(--text);
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/*Global*/
-body{
-    background-color: var(--principal);
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 15em;
-    font-family: var(--font-secondary);
-    line-height: 0;
-    color:var(--text);
-}
-ul{
-    list-style-type:none ;
-    padding: 2rem;
-    font-size: var(--text-md);    
-}
+html {
+  font-size: 62.5%;
+  color: #ffffff; }
+
+/*GLOBALS*/
+body {
+  background-color: #183250;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 15em;
+  font-family: "Michroma", sans-serif;
+  line-height: 0;
+  color: #ffffff; }
+
+ul {
+  list-style-type: none;
+  padding: 0 1rem;
+  font-size: 1em; }
+
 ol, ul {
-    padding-left: 0;
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    color: var(--text);
-}
-a{
-    color: var(--text);
-    text-decoration: none;
-    display:inline-block;
-    color: var(--text);
-}
-/*Helpers*/
+  padding-left: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+  display: block; }
 
-.flex-row{
-    display:flex;
-}
-.flex-column{
-    display: flex;
-    flex-direction:column;
-}
-.contenedor{
-    max-width: 1080px;
-    margin:0 auto;
-}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff; }
 
-/*Header*/
+/*HELPERS*/
+.contenedor {
+  max-width: 1080px;
+  margin: 0 auto; }
 
-main{
-    font-size:1.5rem;
-}
+.size {
+  transition: transform ease-in-out 1s; }
+  .size:hover {
+    transform: scale(1.2); }
 
-header{
-    background-color: var(--principal);
-    color: var(--text);
-    
-}
-.color__header{
-    background-color: var(--principal);
-}
-header .navbar{
-    min-height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    color: var(--text);
-}
-header .logo {
+/*PARTIALS*/
+main {
+  font-size: 1.5rem; }
+
+header {
+  background-color: #183250;
+  color: #ffffff; }
+  header .logo {
     width: 25%;
     padding: 5px;
     flex-basis: 30%;
-    margin-top:0;
-}
-header .menu{
-    justify-content: space-between;
-    flex-basis: 50%;
-}
-header .menu__item{
-    border: 2px solid var(--principal);
+    margin-top: 0; }
+
+.navbar {
+  min-height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  color: #ffffff; }
+
+.menu {
+  justify-content: space-between;
+  flex-basis: 50%; }
+  .menu__item {
+    border: 2px solid #183250;
     transition: border-color .3s ease-in-out;
-    font-size: var(--text-md);
-}
-.menu .menu__item:hover {
-    border-color:#07daff;
-    color:var(--text);
-}
-.menu .menu__item .menu__link{
-    font-size: var(--text-md);
-    padding: 1.5rem;
-    color: var(--text);
-}
+    font-size: 1em; }
+    .menu__item:hover {
+      border-color: #07daff;
+      color: #ffffff; }
+  .menu__link {
+    padding: 1.5rem; }
 
+.color__header {
+  background-color: #183250; }
 
-.navbar .nav-link{
-    font-family: var(--font-secondary);
-    text-decoration: none;
-    color:var(--text);
-    
-}
-/* Main */
+.navbar .nav-link {
+  font-family: "Michroma", sans-serif;
+  text-decoration: none;
+  color: #ffffff; }
 
-.title {
-    text-align: center;
-    font-size: 4rem;
-    font-family: var(--font-secondary);
-    color:var(--text);
-    padding:2rem;
-    letter-spacing: 0.1em;
-    font-weight: 100;
-    margin-bottom: 0;
-}
-
-.presentation__image img{
-    width: 100%;
-    padding:3em 0; 
-}
-.diferentes_destinos{
-    display:grid;
-    gap: 4rem;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr 3em 1fr 1fr 3em 1fr;
-    grid-template-areas: 
-
-    "img_parque malargue laguna"
-    "titulo1 titulo2 titulo3"
-    "parqueDesc malargueDesc lagunaDesc"
-    "salinas aconcagua potrerillos"
-    "titulo4 titulo5 titulo6"
-    "salinasDesc aconcaguaDesc potrerillosDesc";
-
-   
-}
-
-.titulo1{
-    grid-area: titulo1;
-    text-align:center;
-    color:var(--text);
-    letter-spacing: 0.3em;
-}
-
-.titulo1:hover{
-    border-color: var(--text);
-}
-
-.img_parque{
-    grid-area: img_parque;
-    animation: be_crazy 1 ease-in-out 5s;
-    
-    
-}
-
-.description{
-    grid-area: parqueDesc;
-    width: 100%;
-    text-align: justify;
-    line-height: 2rem;
-    color:var(--text);
-    font-family: var(--font-third);
-    
-}
-.malargue{
-    grid-area: malargue;
-}
-.titulo2{
-    grid-area: titulo2;
-    text-align:center;
-    color:var(--text);
-    letter-spacing: 0.3em;
-}
-.malargue__description{
-    grid-area: malargueDesc;
-    width: 100%;
-    text-align: justify;
-    line-height: 2rem;
-    color:var(--text);
-    font-family: var(--font-third);
-
-}
-.laguna__maule{
-    grid-area: laguna;
-}
-.titulo3{
-    grid-area: titulo3;
-    text-align:center;
-    color:var(--text);
-    letter-spacing: 0.3em;
-}
-.lago__colbun--description{
-    grid-area: lagunaDesc;
-    width: 100%;
-    text-align: justify;
-    line-height: 2rem;
-    color:var(--text);
-    font-family: var(--font-third);
-}
-.salinas{
-    grid-area: salinas;
-}
-.titulo4{
-    grid-area: titulo4;
-    text-align:center;
-    color:var(--text); 
-    letter-spacing: 0.3em;
-}
-.salinas__description{
-    grid-area: salinasDesc;
-    width: 100%;
-    text-align: justify;
-    line-height: 2rem;
-    color:var(--text);
-    font-family: var(--font-third);
-}
-.aconcagua{
-    grid-area: aconcagua;
-}
-.titulo5{
-    grid-area: titulo5;
-    text-align:center;
-    color:var(--text);
-    letter-spacing: 0.3em;
-}
-.aconcagua__description{
-    grid-area: aconcaguaDesc;
-    width: 100%;
-    text-align: justify;
-    line-height: 2rem;
-    color:var(--text);
-    font-family: var(--font-third);
-}
-.potrerilllos{
-    grid-area: potrerillos;
-}
-.titulo6{
-    grid-area: titulo6;
-    text-align:center;
-    color:var(--text);
-    letter-spacing: 0.3em;
-}
-.potrerillos__description{
-    grid-area: potrerillosDesc;
-    width: 100%;
-    text-align: justify;
-    line-height: 2rem;
-    color:var(--text);
-    font-family: var(--font-third);
-}
-
-.card{
-    background-color: #0b2135;
-    margin-top: 2rem;
-    padding-right: 0;
-    padding-left:0;
-}
-.card-img-top{
-   padding-right: 0;
-}
-
-.diferentes_destinos img{
-    width: 100%;
-    /* gap: 1rem; */
-    
-}
-.texto{
-    color:var(--text);
-    line-height:2rem;
-    letter-spacing:0.1em;
-    text-align: justify;
-    padding: 0.5rem;
-    font-family: var(--font-third);
-    padding-bottom: 3rem;
-    
-}
-.titulo{
-    font-family: var(--font-secondary);
-    color:var(--text);
-    padding: 0.5rem;
-    line-height: 5rem;
-    text-align: center;
-}
-#mapa{
-    display: flex;
-    justify-content: center;
-    
-}
-.contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color:var(--text);
-    padding: 0.5rem;
-    line-height: 1.5rem;
-
-}
-.contacto__text{
-    display:flex;
-    flex-direction: column;
-    color:var(--text-1);
-    font-size: .7em;
-    padding:5px;
-    font-family: var(--font-third);
-    
-}
-
-.viajes{
-    display:flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap:1.5em;   
-}
-.viajes img{
-    width: 100%;
-    height: 100%;
-    /* margin: 7px;      */
-    padding: 1em 1em;
-}
-    
-.parque{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;   
-}
-.parque img{
-    width: 100%;   
-}
-/*footer*/
+@media screen and (max-width: 720px) {
+  header .navbar {
+    font-size: 0.8em;
+    flex-basis: 20%; } }
 
 .pieDePagina {
-    background-color: #143c66;
-    font-size: 10px;
-    padding-top: 25px;
-    padding-bottom:25px;
+  background-color: #143c66;
+  font-size: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif; }
+  .pieDePagina__link {
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-family: var(--font-third);
-}
-
-.pieDePagina__link {
-    text-align: center;
-    color:white;
+    color: white;
     font-size: 12px;
-    font-family: var(--font-third);
+    font-family: "Open Sans", sans-serif;
     padding: 1px;
-    line-height: .7rem;
-    
-}
-.pieDePagina__image {
-    margin-inline: 10px; 
+    line-height: .7rem; }
+  .pieDePagina__image {
+    margin-inline: 10px;
     display: inline-block;
     align-items: center;
-    padding: 10px;  
-}
+    padding: 10px; }
 
-@media screen and (max-width: 720px){
-    
-    header .navbar { 
-        font-size: 0.8em;
-        flex-basis: 20%;
+/*views*/
+.title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Michroma", sans-serif;
+  color: #ffffff;
+  padding: 2rem;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+  margin-bottom: 0; }
 
-    }
+.presentation__image img {
+  width: 100%;
+  padding: 3em 0; }
 
-    /* .logo {
-        flex-basis: 8%;    
-        width: 5em;
-    } */
+.card {
+  background-color: #0b2135;
+  margin-top: 2rem;
+  padding-right: 0;
+  padding-left: 0; }
 
-    .title {
-        font-size: 1.4em;
-    }
-    
-   .presentation__image{
-       flex-grow: 1;
-   }
-   #destinos{
-       display: grid;
-       align-items: center;
-       justify-content: center;
-       grid-template-columns: 1fr 1fr;
-       grid-template-rows: 1fr 1fr 1fr;
-       grid-template-areas: 
-       "img_parque   malargue"
-        "titulo1     titulo2"
-        "parqueDesc  malargueDesc"
-        "laguna     salinas"
-        " titulo3    titulo4"
-        "lagunaDesc     salinasDesc"
-        "aconcagua  potrerillos"
-        "titulo5    titulo6"
-        "aconcaguaDesc  potrerillosDesc";
-        padding: 0 1em;
-    }
+.card-img-top {
+  padding-right: 0; }
 
-    #destinos h3 {
-        font-size: 0.8em;
+.diferentes_destinos img {
+  width: 100%;
+  /* gap: 1rem; */ }
 
-    }
+.texto {
+  color: #ffffff;
+  line-height: 2rem;
+  letter-spacing: 0.1em;
+  text-align: justify;
+  padding: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 3rem; }
 
-    #destinos p {
-        font-size: .8em;
-    }
+.titulo {
+  font-family: "Michroma", sans-serif;
+  color: #ffffff;
+  padding: 0.5rem;
+  line-height: 5rem;
+  text-align: center; }
 
-    #destinos img {
-        width: 100%;
-    }
-    p.texto{
-        font-size: 1em;
-        padding:0 1em;
-        text-align: justify;
-        
-    }
-    img.parque{
-        width: 100%;
-    }
-    h2.titulo{
-        font-size:1em ;
-        padding:0 1em;
-    }
-    h2.contacto{
-        font-size:.9em ;   
-    }
-    label.contacto{
-        font-size: .7em ;
-    }
-    div.viajes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
+#mapa {
+  display: flex;
+  justify-content: center; }
 
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 0.5rem;
+  line-height: 1.5rem; }
+  .contacto__text {
+    display: flex;
+    flex-direction: column;
+    color: var(#0e0d0d);
+    font-size: .7em;
+    padding: 5px;
+    font-family: "Open Sans", sans-serif; }
 
-/*ANIMACION*/
+.parque {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center; }
 
+.parque img {
+  width: 100%; }
 
-.size {
-    transition: transform ease-in-out 1s;
-}
-.size:hover {
-    transform: scale(1.2);
-}
+@media screen and (max-width: 720px) {
+  .title {
+    font-size: 1.4em; }
+  .presentation__image {
+    flex-grow: 1; } }
 
+@media screen and (max-width: 720px) {
+  h2.contacto {
+    font-size: .9em; }
+  label.contacto {
+    font-size: .7em; } }

@@ -1,0 +1,64 @@
+main{
+    font-size: 1.5rem;
+}
+
+header{
+    background-color: $principal;
+    color: $text;
+        .logo{
+            width: 25%;
+            padding: 5px;
+            flex-basis: 30%;
+            margin-top:0;
+        }
+    }
+
+    .navbar{
+        min-height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        color: $text;
+
+    }
+    .menu{
+        justify-content: space-between;
+        flex-basis: 50%;
+
+        &__item{
+            border: 2px solid $principal;
+            transition: border-color .3s ease-in-out;
+            font-size: $text-md;
+
+            &:hover{
+                border-color:#07daff;
+                color: $text;
+            }
+        }
+        &__link {
+            padding: 1.5rem;
+        }    
+    }
+
+
+.color__header{
+    background-color: $principal;
+}
+
+.navbar .nav-link{
+    font-family: $font-secondary;
+    text-decoration: none;
+    color: $text;
+}
+@media screen and (max-width: 720px){
+
+    header .navbar {
+        font-size: 0.8em;
+        flex-basis: 20%;
+
+
+    }
+}
+
+
+

@@ -1,0 +1,44 @@
+/*RESETS*/
+*,
+* ::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    color: $text;
+}
+
+
+
+/*GLOBALS*/
+body{
+    background-color: $principal;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 15em;
+    font-family: $font-secondary;
+    line-height: 0;
+    color: $text;
+}
+ul{
+    list-style-type:none ;
+    padding: 0 1rem;
+    font-size: $text-md; 
+      
+}
+ol, ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: $text;
+    display:block;
+}
+a{
+    color: $text;
+    text-decoration: none;
+    display:inline-block;
+    color: $text;  
+}
