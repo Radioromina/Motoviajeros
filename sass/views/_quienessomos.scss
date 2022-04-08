@@ -1,0 +1,13 @@
+main{
+    h2{
+        @include contenedor;
+    }
+    section{
+        article{
+            p{
+                @include contenedor;
+            }
+        }
+    }
+}
+

@@ -1,39 +1,55 @@
+main {
+    section {
+        div{
+            .presentation__image{
+                    padding: 3em 0;
+                    width: 100%;
+                  
+            }
+        }
+        
+        .row{
+            @include contenedor;
+        }
+        .card{
+            background-color: #0b2135;
+            margin-top: 2rem;
+            padding-right: 0;
+            padding-left:0;
+            
+        }
+        .card-img-top{
+            padding-right: 0;
+            
+        }
+        
+        .diferentes_destinos img{
+            width: 100%;
+        }
+    }
+}
+
+      
+        
+
+   
+
+
 
 .title {
     text-align: center;
     font-size: 4rem;
     font-family: $font-secondary;
-    color: $text;
+    color: map-get($mapaDeColores , color-texto );
     padding:2rem;
     letter-spacing: 0.1em;
     font-weight: 100;
     margin-bottom: 0;
+    @include contenedor;
 }
 
-.presentation__image img{
-    width: 100%;
-    padding:3em 0; 
-}
-
-
-
-.card{
-    background-color: #0b2135;
-    margin-top: 2rem;
-    padding-right: 0;
-    padding-left:0;
-}
-.card-img-top{
-   padding-right: 0;
-}
-
-.diferentes_destinos img{
-    width: 100%;
-    /* gap: 1rem; */
-    
-}
 .texto{
-    color: $text;
+    color: map-get($mapaDeColores , color-texto );
     line-height:2rem;
     letter-spacing:0.1em;
     text-align: justify;
@@ -44,7 +60,7 @@
 }
 .titulo{
     font-family: $font-secondary;
-    color: $text;
+    color: map-get($mapaDeColores , color-texto );
     padding: 0.5rem;
     line-height: 5rem;
     text-align: center;
@@ -54,24 +70,7 @@
     justify-content: center;
     
 }
-.contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $text;
-    padding: 0.5rem;
-    line-height: 1.5rem;
-    &__text{
-        display:flex;
-        flex-direction: column;
-        color:var($text-1);
-        font-size: .7em;
-        padding:5px;
-        font-family: $font-third;
-        
-    }
-}
+
   
 .parque{
     display: flex;

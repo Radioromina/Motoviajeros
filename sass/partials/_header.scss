@@ -3,8 +3,9 @@ main{
 }
 
 header{
-    background-color: $principal;
-    color: $text;
+    @include contenedor;
+    background-color: map-get($mapaDeColores , color-principal );
+    color: map-get($mapaDeColores , color-texto );
         .logo{
             width: 25%;
             padding: 5px;
@@ -18,7 +19,7 @@ header{
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
-        color: $text;
+        color: map-get($mapaDeColores , color-texto );
 
     }
     .menu{
@@ -26,13 +27,13 @@ header{
         flex-basis: 50%;
 
         &__item{
-            border: 2px solid $principal;
+            border: 2px solid map-get($mapaDeColores , color-principal );
             transition: border-color .3s ease-in-out;
             font-size: $text-md;
 
             &:hover{
                 border-color:#07daff;
-                color: $text;
+                color: map-get($mapaDeColores , color-texto );
             }
         }
         &__link {
@@ -42,13 +43,13 @@ header{
 
 
 .color__header{
-    background-color: $principal;
+    background-color: map-get($mapaDeColores , color-principal );
 }
 
 .navbar .nav-link{
     font-family: $font-secondary;
     text-decoration: none;
-    color: $text;
+    color: map-get($mapaDeColores , color-texto );
 }
 @media screen and (max-width: 720px){
 

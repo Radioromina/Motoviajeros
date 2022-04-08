@@ -1,6 +1,11 @@
 /*HELPERS*/
 
-.contenedor{
-    max-width: 1080px;
-    margin:0 auto;
+// .contenedor{
+//     max-width: 1080px;
+//     margin:0 auto;
+// }
+
+@mixin contenedor ($max-width: 1080px, $margin: 0 auto){
+    max-width: $max-width;
+    margin:$margin;
 }

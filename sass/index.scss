@@ -24,5 +24,7 @@
 @import './views/rutas';
 
 
-
+.estiloParrafo{
+    color: map-get($mapaDeColores,principal);
+}
 
