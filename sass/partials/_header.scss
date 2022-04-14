@@ -14,6 +14,8 @@ header{
         }
     }
 
+   
+
     .navbar{
         min-height: 10vh;
         justify-content: space-between;
@@ -22,6 +24,7 @@ header{
         color: map-get($mapaDeColores , color-texto );
 
     }
+
     .menu{
         justify-content: space-between;
         flex-basis: 50%;
@@ -30,6 +33,11 @@ header{
             border: 2px solid map-get($mapaDeColores , color-principal );
             transition: border-color .3s ease-in-out;
             font-size: $text-md;
+
+            &--active{
+                @extend .menu__item;
+                border-bottom: 2px solid cyan;
+            }
 
             &:hover{
                 border-color:#07daff;

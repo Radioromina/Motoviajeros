@@ -74,11 +74,13 @@ header {
 .menu {
   justify-content: space-between;
   flex-basis: 50%; }
-  .menu__item {
+  .menu__item, .menu__item--active {
     border: 2px solid #183250;
     transition: border-color .3s ease-in-out;
     font-size: 1em; }
-    .menu__item:hover {
+    .menu__item--active {
+      border-bottom: 2px solid cyan; }
+    .menu__item:hover, .menu__item--active:hover {
       border-color: #07daff;
       color: #ffffff; }
   .menu__link {
