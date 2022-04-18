@@ -1,3 +1,6 @@
+h2{
+    padding: 1em;
+}
 form{
     @include contenedor;
     justify-content:center;
@@ -13,7 +16,9 @@ form{
             
         }
     }
-    
+    label{
+        padding:0.5em 0;
+    }
 }
 
 
@@ -21,9 +26,15 @@ form{
 @media screen and (max-width: 720px){
 
     h2.contacto{
-        font-size:.9em ;   
+        font-size:.9em ;
+        padding: 2em;   
     }
-    label.contacto{
-        font-size: .7em ;
-    }
+        form{
+            padding:3em;
+        }
+    
+        &-label{
+        padding:1em 0;
+        }
+    
 }

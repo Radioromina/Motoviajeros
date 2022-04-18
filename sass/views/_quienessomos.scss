@@ -11,5 +11,8 @@ main{
     }
 }
 
-
- 
+@media screen and (max-width: 720px){ 
+    .carousel-item{
+        padding:1em;
+    }
+}

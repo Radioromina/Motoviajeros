@@ -22,6 +22,9 @@ main {
             padding-right: 0;
             
         }
+        .card-text{
+            line-height: 2.5rem;
+        }
         
         .diferentes_destinos img{
             width: 100%;
@@ -92,4 +95,8 @@ main {
     .presentation__image{
     flex-grow: 1;
     }
+    .row{
+        padding:1rem;
+    }
+   
 }

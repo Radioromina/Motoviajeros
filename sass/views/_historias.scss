@@ -1,4 +1,12 @@
 
 .parque{
     @include contenedor;
+    width: 60%;
+
+}
+@media screen and (max-width: 720px){ 
+    .parque{
+        width: 90%;
+        padding:0.5em;
+    }
 }
